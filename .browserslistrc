@@ -1,7 +1,0 @@
-# 支持浏览器列表 -- 参考：https://github.com/browserslist/browserslist
-
-# 快速查询 -- 终端 npx browserslist
-
-> 1%
-last 2 versions
-not dead
