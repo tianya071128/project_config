@@ -1,0 +1,5 @@
+# 经测试， node_modules 也会默认被忽略
+
+# 忽略 dist 目录下的所有文件
+/dist
+.browserslistrc
