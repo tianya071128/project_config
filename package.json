@@ -11,6 +11,7 @@
     "lint:out": "eslint -o ./test/test.html -f html src"
   },
   "dependencies": {
+    "caniuse-lite": "^1.0.30001342",
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
   },
