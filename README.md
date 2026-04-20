@@ -1,7 +1,3 @@
+# vue3_monorepo
 
-
-# 概述
-
-各框架的项目配置
-
-* vue2_mobile分支：适用于 vue2 的移动端配置
+Vue3 + Vite + pnpm + monorepo

@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "name": "vue3_monorepo",
+  "scripts": {
+    "dev:pc": "pnpm --filter @wzb/pc dev",
+    "dev:h5": "pnpm --filter @wzb/h5 dev",
+    "build:all": "pnpm --filter './apps/*' build"
+  },
+  "packageManager": "pnpm@10.24.0"
+}
