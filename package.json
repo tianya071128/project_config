@@ -1,9 +1,12 @@
 {
-  "private": true,
   "name": "vue3_monorepo",
+  "private": true,
   "scripts": {
     "dev:admin": "pnpm --filter @wzb/web-admin dev",
     "build:all": "pnpm --filter ./apps/* build"
+  },
+  "dependencies": {
+    "oxfmt": "catalog:"
   },
   "packageManager": "pnpm@10.24.0"
 }
