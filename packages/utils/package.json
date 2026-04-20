@@ -8,7 +8,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "dependencies": {
+    "@wzb/config": "workspace:*"
+  },
   "exports": {
     ".": "./src/index.ts",
     "./*": "./src/*"

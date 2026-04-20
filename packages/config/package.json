@@ -14,5 +14,8 @@
     "@vue/tsconfig": "catalog:",
     "typescript": "catalog:",
     "vite": "catalog:"
+  },
+  "exports": {
+    "./tsconfig/*": "./tsconfig/*"
   }
 }
