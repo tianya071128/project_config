@@ -8,6 +8,7 @@ Vue3 + Vite + pnpm + monorepo
 
 1. 安装顶层包: `pnpm add <package> --save-catalog -w`
 2. 安装子包: `pnpm add <package> --save-catalog -w --filter <package>`
+3. 升级包: `pnpm update <package> [-r]` --> -r 升级全部子包
 
 ## typescript
 
@@ -30,3 +31,10 @@ Vue3 + Vite + pnpm + monorepo
 - 升级:
   - 升级根目录上的 `oxlint` 的包
   - 其他需要修改的配置, 直接更改对应的配置文件即可
+
+## 浏览器兼容性
+
+- `vite` 只支持语法转译, 不包含 `polyfill`
+- 需要 `polyfill` 的话
+  - 使用[在线自动生成](https://cdnjs.cloudflare.com/polyfill/)
+  - 使用 `@vitejs/plugin-legacy` 注入需要的 `polyfill`, 但是底层还是使用 `babel`. 而 `vite` 底层使用 `OXC` 的转换器, 说不定未来会内置支持
