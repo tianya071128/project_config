@@ -12,3 +12,21 @@ Vue3 + Vite + pnpm + monorepo
 ## typescript
 
 统一在 `packages/config/tsconfig/` 中配置, 其他子包通过 `extends` 继承
+
+## Formatter
+
+- 格式器使用 [`oxfmt`](https://oxc.rs/docs/guide/usage/formatter.html), vscode 需要安装对应插件 `Oxc`
+- 统一在根目录中配置 `.oxfmt.json`, 全局唯一
+- 使用 `.vscode/settings.json` 的配置来规范编辑器的行为
+  - 配置默认格式化器为 `oxc.oxc-vscode`
+- 升级:
+  - 升级根目录上的 `oxfmt` 的包
+  - 其他需要修改的配置, 直接更改对应的配置文件即可
+
+## Linter
+
+- 检查器使用 [`oxlint`](https://oxc.rs/docs/guide/usage/linter.html), vscode 需要安装对应插件 `Oxc`
+- 统一在根目录中配置 `.oxlint.json`, 全局唯一
+- 升级:
+  - 升级根目录上的 `oxlint` 的包
+  - 其他需要修改的配置, 直接更改对应的配置文件即可

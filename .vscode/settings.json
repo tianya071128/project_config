@@ -28,4 +28,8 @@
   "[vue]": {
     "editor.defaultFormatter": "oxc.oxc-vscode"
   }
+  // 保存时自动使用 oxc 进行修复 --> 手动修复为好
+  // "editor.codeActionsOnSave": {
+  //   "source.fixAll.oxc": "always"
+  // }
 }

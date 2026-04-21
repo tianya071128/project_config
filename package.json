@@ -5,8 +5,9 @@
     "dev:admin": "pnpm --filter @wzb/web-admin dev",
     "build:all": "pnpm --filter ./apps/* build"
   },
-  "dependencies": {
-    "oxfmt": "catalog:"
+  "devDependencies": {
+    "oxfmt": "catalog:",
+    "oxlint": "catalog:"
   },
   "packageManager": "pnpm@10.24.0"
 }

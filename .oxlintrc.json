@@ -1,0 +1,41 @@
+{
+  // 用于 json 配置的配置验证以及提示
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  // 插件 - 包含内置插件
+  "plugins": [
+    // Eslint 核心规则
+    "eslint",
+    // 内置插件 typescript  --> 同 typescript-eslint: eslint-plugin-typescript: https://typescript-eslint.io/
+    "typescript",
+    // 内置插件 unicorn  --> 同 eslint-plugin-unicorn: https://github.com/sindresorhus/eslint-plugin-unicorn
+    "unicorn",
+    "oxc",
+    // 内置插件 vue --> 同 eslint-plugin-vue: https://eslint.vuejs.org/
+    "vue"
+  ],
+  // 功能分组控制规则, 把数百条内置 / 插件规则按用途分成 7 大类，一键启用 / 禁用整个类别
+  // rules 优先级更高
+  "categories": {
+    // 绝对错误或无用的代码
+    "correctness": "error"
+  },
+  // 规则
+  "rules": {
+    // console 只允许特定的输出
+    "no-console": [
+      "error",
+      {
+        "allow": ["warn", "error", "debug"]
+      }
+    ]
+  },
+  // 环境 --> 预定义的全局变量
+  "env": {
+    // 最新的 ECMAScript 全局变量，相当于 es2026
+    "builtin": true
+  },
+  // 全局变量: 可配置为只读或可写
+  "globals": {},
+  // 忽略列表
+  "ignorePatterns": ["node_modules", "dist"]
+}
